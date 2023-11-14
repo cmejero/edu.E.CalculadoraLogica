@@ -6,9 +6,10 @@ public class OperacionImplementacion implements OperacionInterfaz
 	
 	public void operacionIgualdad(String expresion1 , String expresion2)
 	{
-		if(expresion1.contains(expresion2) ) 
+		if(expresion1.equals(expresion2) ) 
 		{
-			System.out.println("Es verdadero");
+			
+			System.out.println("Es verdadero");	
 		}
 		else
 			 {
@@ -18,7 +19,7 @@ public class OperacionImplementacion implements OperacionInterfaz
 	
 	public void operacionDesigualdad(String expresion1 , String expresion2)
 	{
-		if(!expresion1.contains(expresion2))
+		if(!expresion1.equals(expresion2))
 		{
 			System.out.println("Es verdadero");
 		}

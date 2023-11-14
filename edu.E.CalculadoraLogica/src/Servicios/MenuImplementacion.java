@@ -1,9 +1,11 @@
 package Servicios;
 
+import java.util.Scanner; 
+
 public class MenuImplementacion implements MenuInterfaz 
 {
 
-public int mostarMenuYSeleccion(comunicacionTecladoM)
+public int mostarMenuYSeleccion(Scanner comunicacionTecladoM)
    {
 		
 		int opcionSeleccionada;
@@ -19,12 +21,12 @@ public int mostarMenuYSeleccion(comunicacionTecladoM)
    }
 
 
-public String expresion()
+public String expresion(Scanner comunicacionTecladoM)
      {
-	   String expresion;
+	  String expresion;
 	  System.out.println("Introduzca una palabra");
 	  
-	  expresion= System.in.toString();
-	  return expresion;	
+	  expresion = comunicacionTecladoM.next();
+	  return expresion;
      }
 }
